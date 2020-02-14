@@ -4,6 +4,7 @@ require 'vendor/autoload.php';
 
 
 $client = new \GuzzleHttp\Client();
+//var_dump($client);
 $res = $client->request('GET', 'https://itunes.apple.com/lookup?isbn=9780316069359', [
     'auth' => ['user', 'pass']
 ]);
